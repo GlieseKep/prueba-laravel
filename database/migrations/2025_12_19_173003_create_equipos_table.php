@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('tipo', 10);
             $table->string('marca', 25);
             $table->text('defecto');
-            $table->string('nombre_duenio', 35);
+            $table->string('nombre_duenio', 50);
             $table->string('telefono_duenio', 10);
             $table->string('estado', 20);
 
