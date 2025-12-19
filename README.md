@@ -55,7 +55,7 @@
 
 <h2>2. Tipos de dispositivo</h2>
 
-<p>El sistema maneja los siguientes tipos de vehículo:</p>
+<p>El sistema maneja los siguientes tipos de dispositivos:</p>
 
 <ul>
   <li>Teléfono</li>
@@ -64,7 +64,7 @@
 
 <h2>2. Tipos de estados</h2>
 
-<p>El sistema maneja los siguientes tipos de vehículo:</p>
+<p>El sistema maneja los siguientes tipos de estados:</p>
 
 <ul>
   <li>Revisado</li>
