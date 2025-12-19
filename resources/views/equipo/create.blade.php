@@ -16,7 +16,7 @@
         <!-- Campo de marca -->
         <div class="mb-3">
             <label class="form-label">Marca *</label>
-            <input type="marca" name="placa" class="form-control" required maxlength="25">
+            <input type="text" name="marca" class="form-control" required maxlength="25">
         </div>
         <!-- Campo de defecto -->
         <div class="mb-3">
