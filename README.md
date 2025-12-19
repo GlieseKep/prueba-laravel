@@ -36,12 +36,12 @@
       <td>Sí</td>
     </tr>
     <tr>
-      <td><code>nombre_dueño</code></td>
+      <td><code>nombre_duenio</code></td>
       <td>string</td>
       <td>Sí</td>
     </tr>
     <tr>
-      <td><code>telefono_dueño</code></td>
+      <td><code>telefono_duenio</code></td>
       <td>string</td>
       <td>No</td>
     </tr>
