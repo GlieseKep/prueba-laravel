@@ -92,13 +92,13 @@ La opción de eliminar de eliminar un registro no existe para así tener un hist
 <h2>5. Capruras de pantalla</h2>
 
 <h3> Listado</h3>
-<img src="CapturasPantalla/listado.png">
+<img src="CapturasPantalla/listado.png" alt="listado">
 
 <h3> Listado en teléfono</h3>
-<img src="CapturasPantalla/listado_telefono.png">
+<img src="CapturasPantalla/listado_telefono.png" alt="listado en teléfono">
 
 <h3> Formulario</h3>
-<img src="CapturasPantalla/formulario.png">
+<img src="CapturasPantalla/formulario.png" alt="Formulario">
 
 <h3> Formulario en teléfono</h3>
-<img src="CapturasPantalla/formulario_telefono.png">
+<img src="CapturasPantalla/formulario_telefono.png" alt="Formulario en teléfono">
