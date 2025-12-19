@@ -34,9 +34,16 @@
                     <td>
                         <a href="{{ route('vehiculos.edit', $vehiculo) }}"
                            class="btn btn-sm btn-warning">Editar</a>
+                        <!--
                         <form action="{{ route('vehiculos.destroy', $vehiculo)}}" method="POST" class="d-inline">
+                            @csrf
+                            @method('DELETE')
+                            <button class="btn btn-sm btn-danger" onclick="return confirm('¿Eliminar?')">Eliminar</button>
                         </form>
+                        -->
+
                     </td>
+
                 </tr>
             @endforeach
             </tbody>
