@@ -85,6 +85,8 @@ class EquipoController extends Controller
      */
     public function destroy(Equipo $equipo)
     {
-        //
+        Equipo::deleteVehiculo($equipo);
+        return redirect()->route('equipo.index')
+            ->with('success', 'El vehiculo ha sido eliminado.');
     }
 }

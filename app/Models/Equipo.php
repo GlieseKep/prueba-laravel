@@ -27,5 +27,8 @@ class Equipo extends Model
     {
         return $this->update($data);
     }
-
+    static public function deleteEquipo(Equipo $equipo)
+    {
+        $equipo->delete();
+    }
 }
