@@ -62,6 +62,22 @@
   <li>Tablet</li>
 </ul>
 
+<h2>2. Tipos de estados</h2>
+
+<p>El sistema maneja los siguientes tipos de vehículo:</p>
+
+<ul>
+  <li>Revisado</li>
+  <li>En reparación</li>
+  <li>Reparado</li>
+  <li>No necesito arreglo</li>
+</ul>
+
+Revisado
+En reparación
+Reparado
+No necesitó arreglo
+
 <h2>3. Eliminación de Registros</h2>
 
 <p>
