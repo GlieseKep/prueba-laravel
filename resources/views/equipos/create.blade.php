@@ -21,8 +21,7 @@
         <!-- Campo de defecto -->
         <div class="mb-3">
             <label class="form-label">Defecto</label>
-            <textarea name="defecto" class="form-control"
-                      rows="3"></textarea>
+            <textarea name="defecto" class="form-control"rows="3" required></textarea>
         </div>
         <!-- Campo de nombre_duenio -->
         <div class="mb-3">

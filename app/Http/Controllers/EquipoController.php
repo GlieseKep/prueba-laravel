@@ -13,7 +13,7 @@ class EquipoController extends Controller
     public function index()
     {
         $equipos = Equipo::getEquipos();
-        return view('equipo.index', compact('equipos'));
+        return view('equipos.index', compact('equipos'));
     }
 
     /**
@@ -21,7 +21,7 @@ class EquipoController extends Controller
      */
     public function create()
     {
-        return view('equipo.create');
+        return view('equipos.create');
     }
 
     /**
@@ -40,8 +40,8 @@ class EquipoController extends Controller
 
         Equipo::createEquipo($request->all());
 
-        return redirect()->route('equipo.index')
-            ->with('sucess', 'El equipo ha sido registrado.');
+        return redirect()->route('equipos.index')
+            ->with('sucess', 'El equipos ha sido registrado.');
     }
 
     /**
@@ -57,7 +57,7 @@ class EquipoController extends Controller
      */
     public function edit(Equipo $equipo)
     {
-        return view('equipo.edit', compact('equipo'));
+        return view('equipos.edit', compact('equipo'));
     }
 
     /**
@@ -76,7 +76,7 @@ class EquipoController extends Controller
 
         $equipo->updateEquipo($request->all());
 
-        return redirect()->route('equipo.index')
+        return redirect()->route('equipos.index')
             ->with('success', 'El quipo ha sido actualizado.');
     }
 
@@ -85,8 +85,8 @@ class EquipoController extends Controller
      */
     public function destroy(Equipo $equipo)
     {
-        Equipo::deleteVehiculo($equipo);
-        return redirect()->route('equipo.index')
-            ->with('success', 'El vehiculo ha sido eliminado.');
+        Equipo::deleteEquipo($equipo);
+        return redirect()->route('equipos.index')
+            ->with('success', 'El equipos ha sido eliminado.');
     }
 }

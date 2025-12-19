@@ -44,8 +44,9 @@
                 <option value="No necesitó arreglo" {{ $equipo->estado == 'No necesritó arreglo' ? 'selected' : ''}}>No necesitó arreglo</option>
             </select>
         </div>
-        </div>
         <a href="{{ route('equipos.index') }}" class="btn btn-secondary">Cancelar</a>
         <button type="submit" class="btn btn-primary">Actualizar</button>
+        </div>
+
     </form>
 @endsection
