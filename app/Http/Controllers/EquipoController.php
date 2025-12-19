@@ -12,8 +12,8 @@ class EquipoController extends Controller
      */
     public function index()
     {
-        $equipo = Equipo::getEquipos();
-        return view ('equipo.index', compact('equipo'));
+        $equipos = Equipo::getEquipos();
+        return view('equipo.index', compact('equipos'));
     }
 
     /**

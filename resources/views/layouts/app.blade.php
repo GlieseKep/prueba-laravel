@@ -10,8 +10,7 @@
 <!-- Barra de navegación -->
 <nav class="navbar navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="{{ route('vehiculos.index')
-}}">TecniRápido</a>
+        <a class="navbar-brand" href="{{ route('equipos.index') }}">TecniRápido</a>
     </div>
 </nav>
 <!-- Contenedor para mostrar el contenido -->

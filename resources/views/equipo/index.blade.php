@@ -1,9 +1,9 @@
 @extends('layouts.app')
-@section('titulo', 'Vehículos')
+@section('titulo', 'Equipo')
 @section('contenido')
     <div class="d-flex justify-content-between mb-3">
         <h1>Equipos</h1>
-        <a href="{{ route('equipo.create') }}" class="btn btn-primary">Nuevo</a>
+        <a href="{{ route('equipos.create') }}" class="btn btn-primary">Nuevo</a>
     </div>
     <div class="table-responsive">
         <table class="table table-striped">
@@ -20,7 +20,7 @@
             </tr>
             </thead>
             <tbody>
-            @foreach($equipo as $equipo)
+            @foreach($equipos as $equipo)
                 <tr>
                     <td>{{ $equipo->tipo }}</td>
                     <td>{{ $equipo->marca }}</td>
@@ -32,18 +32,15 @@
                     <td>{{ $equipo->created_at->format('d/m/Y H:i') }}</td>
 
                     <td>
-                        <a href="{{ route('vehiculos.edit', $vehiculo) }}"
+                        <a href="{{ route('equipos.edit', $equipo) }}"
                            class="btn btn-sm btn-warning">Editar</a>
-                        <!--
-                        <form action="{{ route('vehiculos.destroy', $vehiculo)}}" method="POST" class="d-inline">
+                        <form action="{{ route('equipos.destroy', $equipo)}}" method="POST" class="d-inline">
                             @csrf
-                            @method('DELETE')
-                            <button class="btn btn-sm btn-danger" onclick="return confirm('¿Eliminar?')">Eliminar</button>
-                        </form>
-                        -->
+                        @method('DELETE')
+                        <button class="btn btn-sm btn-danger" onclick="return confirm('¿Eliminar?')">Eliminar</button>
+                    </form>
 
                     </td>
-
                 </tr>
             @endforeach
             </tbody>

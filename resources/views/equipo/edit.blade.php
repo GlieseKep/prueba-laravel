@@ -1,8 +1,8 @@
 @extends('layouts.app')
-@section('titulo', 'Editar Vehículo')
+@section('titulo', 'Editar Equipo')
 @section('contenido')
-    <h1>Editar Vehículo</h1>
-    <form action="{{ route('vehiculos.update', $equipo) }}" method="POST">
+    <h1>Editar Equipo</h1>
+    <form action="{{ route('equipos.update', $equipo) }}" method="POST">
         @csrf
         @method('PUT')
         @csrf
@@ -45,7 +45,7 @@
             </select>
         </div>
         </div>
-        <a href="{{ route('equipo.index') }}" class="btn btn-secondary">Cancelar</a>
+        <a href="{{ route('equipos.index') }}" class="btn btn-secondary">Cancelar</a>
         <button type="submit" class="btn btn-primary">Actualizar</button>
     </form>
 @endsection

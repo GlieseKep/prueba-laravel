@@ -1,8 +1,8 @@
 @extends('layouts.app')
-@section('titulo', 'Nuevo Vehículo')
+@section('titulo', 'Nuevo Equipo')
 @section('contenido')
     <h1>Registrar Vehículo</h1>
-    <form action="{{ route('vehiculos.store') }}" method="POST">
+    <form action="{{ route('equipos.store') }}" method="POST">
         @csrf
         <!-- Campo de tipo -->
         <div class="mb-3">
@@ -45,6 +45,9 @@
                 <option value="No necesitó arreglo">No necesitó arreglo</option>
             </select>
         </div>
+
+        <a href="{{ route('equipos.index') }}" class="btn btn-secondary">Cancelar</a>
+        <button type="submit" class="btn btn-primary">Guardar</button>
 
     </form>
 @endsection
